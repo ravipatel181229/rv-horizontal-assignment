@@ -32,10 +32,10 @@ function AddExpenseDialog({ updateBalance, item, deleteHistory, action }) {
                 {action == "EXPENSE" ? "Expense" : "Amount"}
             </h1>
             <form action="" onSubmit={submitForm} className='flex flex-col gap-2 p-5'>
-                <input type="sdg" name='amount' min={1} placeholder='Amount' defaultValue={item ? Math.abs(item.amount) : 0}
-                    className='p-2 border border-slate-500' />
+                <input type="number" name='amount' min={1} placeholder='Amount' defaultValue={item ? Math.abs(item.amount) : 0}
+                    className='p-2 border border-slate-500' required />
                 <input type="text" name='desc' placeholder='Desciption' defaultValue={item ? item.desc : ""}
-                    className='p-2 border border-slate-500' />
+                    className='p-2 border border-slate-500' required />
                 {
                     item ?
                         <div className='md:grid grid-cols-2 gap-2 space-y-2 md:space-y-0'>
