@@ -1,0 +1,57 @@
+/* Customized Input CSS */
+.rv-input {
+  @apply p-2 border border-slate-500;
+}
+
+.rv-input:focus {
+  @apply bg-slate-200
+}
+
+/* Customized Input CSS */
+
+.rv-btn {
+  @apply p-2 py-4 text-xl border text-slate-900 border-night-black;
+  text-transform: uppercase;
+}
+
+.rv-btn:hover {
+  @apply bg-gray-200;
+}
+
+.rv-btn-success {
+  @apply bg-emerald-700 text-white
+}
+
+.rv-btn-success:hover {
+  @apply bg-emerald-800 text-white
+}
+
+.rv-btn-danger {
+  @apply bg-orange-800 text-white
+}
+
+.rv-btn-danger:hover {
+  @apply bg-orange-900 text-white
+}
+
+/* Customized Button CSS */
+
+
+/* Customized List CSS */
+.rv-list {
+  @apply list-none grid gap-2 pr-2
+}
+
+.rv-list-item {
+  @apply p-5 border border-black flex justify-between cursor-pointer
+}
+
+.rv-list-item.success-item {
+  @apply border-r-4 border-r-emerald-600
+}
+
+.rv-list-item.danger-item {
+  @apply border-r-4 border-orange-800
+}
+
+/* Customized List CSS */
